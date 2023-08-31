@@ -1,2 +1,2 @@
-# Kodecamp_3.0
+# Kodecamp
 My Kodecamp repository 
