@@ -136,6 +136,7 @@ main {
 
 .main-item-left h1 {
     font-weight: 800;
+    max-width: 85%;
     color: #1E1B1B;
     font-size: 50px;
     line-height: 60px;
@@ -396,12 +397,16 @@ main {
 
 .arrow-icon {
     color: #1E1B1B;
-    font-size: xx-large;
+    font-size: 30px;
     cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    text-align: center;
 }
 
 .arrow-icon:hover {
-    cursor: progress;
+    transform: scale(1.2);
 }
 
 .background-item-right {
@@ -411,6 +416,7 @@ main {
 
 .background-item-right h3 {
     color: #1E1B1B;
+    max-width: 80%;
     font-weight: 700;
     font-size: 34px;
     line-height: 45px;
@@ -632,27 +638,35 @@ input[type="text"]::placeholder {
     height: 80vh;
 }
 
-.background-img {
+.background-img-wrapper {
+    display: flex;
+}
+
+.background-img-left {
     background-image: url(../images/car-repair.png);
-    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
     height: 60vh;
 }
 
 .background-img-text-background-wrapper {
-    padding-left: 150px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .background-img-text-background {
     background-color: #FF6433;
-    width: 50%;
+    width: 75%;
     height: 60vh;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .background-img-text-background h3 {
-    font-size: 38px;
+    font-size: 30px;
     font-weight: 700;
     color: #fff;
     line-height: 50px;
@@ -674,6 +688,15 @@ input[type="text"]::placeholder {
 .background-img-text-background button:hover {
     background-color: #161414;
     transform: scale(1.01);
+}
+
+.background-img-right {
+    background-image: url(../images/mechanical_img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 60vh;
 }
 
 .rating-ability-wrapper {
@@ -800,6 +823,10 @@ input[type="text"]::placeholder {
     column-gap: 10px;
 }
 
+.profile-id-wrapper {
+    margin-top: 20px;
+}
+
 .profile-id-wrapper p {
     font-size: 20px;
     font-weight: 600;
@@ -830,18 +857,6 @@ input[type="text"]::placeholder {
     justify-content: center;
 }
 
-.profile-wrapper {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    border: 1px solid #F2F2F2;
-    color: #1E1B1B;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #F2F2F2;
-}
-
 .dash-slide-wrapper {
     display: flex;
     column-gap: 10px;
@@ -855,6 +870,10 @@ input[type="text"]::placeholder {
     height: 5px;
     border: 4px;
     background-color: #939191;
+}
+
+.orange-dash {
+    background-color: #FF6433;
 }
 
 .slide-btn-wrapper {
