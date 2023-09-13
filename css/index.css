@@ -1419,12 +1419,28 @@ footer {
         text-align: center;
     }
 
+    .navbar-contact-item p {
+        font-size: 12px;
+    }
+    
+    .navbar-contact-item span {
+        font-size: 12px;
+    }
+
     .navbar-right ul li {
         padding-right: 20px;
     }
 
+    .navbar-right ul li a {
+        font-size: 12px;
+    }
+
     .footer-list-item {
         column-gap: 20px;
+    }
+
+    .footer-list-item li a {
+        font-size: 12px;
     }
 
     .card-left {
@@ -1436,6 +1452,7 @@ footer {
    }
 
    .rating-ability-item p {
-       font-size: 16px;
+       font-size: 14px;
     }
+
 }
