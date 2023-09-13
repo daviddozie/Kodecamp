@@ -1326,7 +1326,7 @@ footer {
    }
 
    .card-right {
-    width: 100%;
+        width: 100%;
    }
 
    .slide-btn-wrapper {
@@ -1387,11 +1387,11 @@ footer {
    }
 
    .brand-item-wrapper {
-    grid-template-columns: auto auto;
-    width: 100%;
-    justify-content: center;
-    column-gap: 40px;
-}
+        grid-template-columns: auto auto;
+        width: 100%;
+        justify-content: center;
+        column-gap: 40px;
+    }
 
    .footer-navbar-container {
         width: 100%;
