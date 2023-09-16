@@ -8,6 +8,7 @@ body {
     font-family: 'Manrope', sans-serif;
     background-color: #fff;
     width: 100%;
+    overflow-x: hidden;
 }
 
 header {
@@ -622,6 +623,10 @@ input[type="text"]::placeholder {
    cursor: pointer;
 }
 
+.border-item:hover .mechanic-icon, .border-item:hover .icon-text {
+    color: #fff;
+}
+
 .border-item p {
     font-weight: 600;
     color: #1E1B1B;
@@ -774,7 +779,7 @@ input[type="text"]::placeholder {
 .brand-item {
     display: flex;
     column-gap: 10px;
-    width: 183px;
+    width: 100%;
     height: 100px;
     justify-content: center;
     align-items: center;
@@ -1135,7 +1140,7 @@ footer {
     }
 
     .navbar-right ul li {
-        padding-right: 30px;
+        padding-right: 60px;
         margin-top: 20px;
     }
 
@@ -1185,11 +1190,11 @@ footer {
     }
 
     .blur-servive-background {
-        left: -20px;
+        left: -10px;
     }
 
     .blur-rating-ground {
-        right: -20px;
+       right: 10px;
     }
 
     .main-item-left h1 {
@@ -1376,6 +1381,20 @@ footer {
    .footer-reachout-right {
         width: 100%;
    }
+
+   .footer-navbar {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .footer-list-item {
+        column-gap: 60px;
+    }
+
+    .footer-list-item li a {
+        font-size: 16px;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -1433,6 +1452,19 @@ footer {
 
     .navbar-right ul li a {
         font-size: 12px;
+    }
+
+    .blur-servive-background {
+        left: -10px;
+    }
+
+    .blur-rating-ground {
+       right: 10px;
+    }
+
+    .brand-item {
+        text-align: center;
+        width: 100%;
     }
 
     .footer-list-item {
