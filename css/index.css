@@ -8,7 +8,6 @@ body {
     font-family: 'Manrope', sans-serif;
     background-color: #fff;
     width: 100%;
-    overflow-x: hidden;
 }
 
 header {
@@ -135,6 +134,18 @@ main {
     display: flex;
     justify-content: left;
     align-items: center;
+    animation: slide-left 0.7s ease-in-out;
+}
+
+@keyframes slide-left {
+   from {
+        transform: translate3d(-100%,0,0);
+        opacity: 0;
+   }
+   to {
+        transform: translateZ(0);
+        opacity: 1;
+   }
 }
 
 .main-item-left h1 {
@@ -175,6 +186,16 @@ main {
     margin-top: 10px;
 }
 
+.icon-rotate {
+    animation: rotate-icon 2s linear infinite;
+}
+
+@keyframes rotate-icon {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .main-item-left-flex p {
     color: #939191;
     font-size: 16px;
@@ -197,6 +218,18 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    animation: slide-right 0.7s ease-in-out;
+}
+
+@keyframes slide-right {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .blur-servive-background {
@@ -611,15 +644,18 @@ input[type="text"]::placeholder {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: ease-in-out 0.5s;
 }
 
 .mechanic-icon {
     font-size: 60px;
+    transition: ease-in-out 0.5s;
     color: #1E1B1B;
 }
 
 .border-item:hover {
    background-color: #FF6433;
+   border-color: #FF6433;
    cursor: pointer;
 }
 
@@ -629,6 +665,7 @@ input[type="text"]::placeholder {
 
 .border-item p {
     font-weight: 600;
+    transition: ease-in-out 0.5s;
     color: #1E1B1B;
 }
 
@@ -681,6 +718,7 @@ input[type="text"]::placeholder {
 .background-img-text-background h3 {
     font-size: 30px;
     font-weight: 700;
+    max-width: 75%;
     color: #fff;
     line-height: 50px;
 }
@@ -987,6 +1025,10 @@ input[type="text"]::placeholder {
 
 .user-qst-btn:hover {
     background-color: #f14f1d;
+}
+
+.user-qst-btn:focus {
+    background-color: rgba(255, 100, 51, 0.5);
 }
 
 .user-qst-icon {
