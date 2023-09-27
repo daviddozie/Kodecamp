@@ -448,7 +448,7 @@ main {
 
 .background-item-right {
     width: 50%;
-    height: 80vh;
+    min-height: 80vh;
 }
 
 .background-item-right h3 {
@@ -718,7 +718,8 @@ input[type="text"]::placeholder {
 .background-img-text-background h3 {
     font-size: 30px;
     font-weight: 700;
-    max-width: 75%;
+    padding-left: 40px;
+    max-width: 80%;
     color: #fff;
     line-height: 50px;
 }
@@ -734,6 +735,7 @@ input[type="text"]::placeholder {
     line-height: 20px;
     transition: all ease-in-out 0.4s;
     cursor: pointer;
+    margin-left: 40px;
 }
 
 .background-img-text-background button:hover {
@@ -821,6 +823,11 @@ input[type="text"]::placeholder {
     height: 100px;
     justify-content: center;
     align-items: center;
+    transition: ease-in-out 0.5s;
+}
+
+.brand-item:hover {
+   transform: perspective(300px) scaleX(1.09);
 }
 
 .brand-item p {
@@ -870,6 +877,12 @@ input[type="text"]::placeholder {
     justify-content: center;
     align-items: center;
     padding: 40px;
+    transition: ease-in-out 0.5s;
+}
+
+.card-left:hover {
+    transform: perspective(300px) rotateY(10deg);
+    box-shadow: 0px 10px 20px 0px rgba(151, 151, 151, 0.5);
 }
 
 .profile-text-wrapper {
@@ -910,6 +923,12 @@ input[type="text"]::placeholder {
     align-items: center;
     justify-content: center;
     padding: 40px;
+    transition: ease-in-out 0.5s;
+}
+
+.card-right:hover {
+    transform: perspective(300px) rotateY(-10deg);
+    box-shadow: 0px 10px 20px 0px rgba(151, 151, 151, 0.5);
 }
 
 .dash-slide-wrapper {
@@ -1260,6 +1279,7 @@ footer {
     .background-item-left {
         width: 100%;
         margin-top: 50px;
+        min-height: 40vh;
     }
 
     .background-item-left h2 {
@@ -1272,7 +1292,7 @@ footer {
 
    .background-item-right {
         width: 100%;
-        height: 75vh;
+        min-height: 40vh;
         margin-top: 50px;
    }
 
@@ -1289,6 +1309,7 @@ footer {
 
    .third-sec-right {
         width: 100%;
+        min-height: 0vh;
         justify-content: start;
    }
 
@@ -1298,7 +1319,7 @@ footer {
 
    .third-sec-left {
         width: 100%;
-        min-height: 60vh;
+        min-height: 0vh;
    }
 
    .third-sec-left h2 {
@@ -1326,9 +1347,24 @@ footer {
         width: 100%;
    }
 
-   .background-img-text-background {
+   .background-img-wrapper {
+        flex-direction: column;
+   }
+
+   .background-img-left {
         width: 100%;
-        text-align: center;
+   }
+
+   .background-img-right {
+    width: 100%;
+}
+
+   .background-img-text-background div h3 {
+       padding-left: 90px;
+   }
+
+   .background-img-text-background div button {
+        margin-left: 90px;
    }
 
    .rating-ability-item {
@@ -1339,7 +1375,7 @@ footer {
         width: 100%;
         flex-wrap: wrap;
         text-align: center;
-        column-gap: 80px;
+        column-gap: 50px;
         padding: 0px 10px;
    }
 
@@ -1374,8 +1410,18 @@ footer {
         margin-bottom: 30px;
    }
 
+   .card-left:hover {
+        transform: none;
+        box-shadow: none;
+   }
+
    .card-right {
         width: 100%;
+   }
+
+   .card-right:hover {
+        transform: none;
+        box-shadow: none;
    }
 
    .slide-btn-wrapper {
@@ -1456,6 +1502,16 @@ footer {
         column-gap: 40px;
     }
 
+    .card-left:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .card-right:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
    .footer-navbar-container {
         width: 100%;
         margin: 0px;
@@ -1507,6 +1563,16 @@ footer {
     .brand-item {
         text-align: center;
         width: 100%;
+    }
+
+    .card-left:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .card-right:hover {
+        transform: none;
+        box-shadow: none;
     }
 
     .footer-list-item {
